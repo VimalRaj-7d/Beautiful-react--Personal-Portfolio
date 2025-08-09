@@ -16,7 +16,7 @@ const projects = [{
     image: "/projects/project2.png",
     tags: ["React", "TailwindCSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/VimalRaj-7d/Beautiful-react--Personal-Portfolio",
 },
 {
     id: 3,
