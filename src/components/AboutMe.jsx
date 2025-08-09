@@ -1,8 +1,22 @@
-
 import { Briefcase, Code, User } from "lucide-react";
-import {vimal} from '.assests/vimal.pdf'
 
 export const AboutMe = () => {
+    const handleDownloadResume = () => {
+  fetch("/vimal.pdf")
+    .then((res) => res.blob())
+    .then((blob) => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "vimal.pdf"; // file name for saving
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+    })
+    .catch((err) => console.error("Error downloading resume:", err));
+};
+
     return (
         <section id="about" className="py-24 px-4 relative">
             {" "}
@@ -35,8 +49,8 @@ export const AboutMe = () => {
                             </a>
 
                             <a
-                                href={vimal} download={'resume'}
-                                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                              onClick={handleDownloadResume}
+                                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 cursor-pointer"
                             >
                                 Download Resume
                             </a>
