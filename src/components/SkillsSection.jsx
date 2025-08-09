@@ -25,6 +25,8 @@ const skills = [
     { name: "Postman", level: 70, category: "tools" },
     { name: "Intellij IDEA", level: 85, category: "tools" },
     { name: "VS Code", level: 95, category: "tools" },
+    { name: "Netlify", level: 95, category: "tools" },
+
 
 ];
 
