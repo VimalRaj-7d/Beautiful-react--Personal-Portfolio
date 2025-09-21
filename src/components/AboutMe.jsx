@@ -8,7 +8,7 @@ export const AboutMe = () => {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "vimal.pdf"; // file name for saving
+      a.download = "R VimalRajResume.pdf"; // file name for saving
       document.body.appendChild(a);
       a.click();
       a.remove();

@@ -118,7 +118,7 @@ export const ContactSection = () => {
                         onSubmit={handleSubmit}
                     >
                         <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
-                        <form className="space-y-6">
+                        <form action="https://getform.io/f/apjzxlla" method="POST" className="space-y-6"  >
                             <div>
                                 <label
                                     htmlFor="name"
