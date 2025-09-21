@@ -2,7 +2,7 @@ import { Briefcase, Code, User } from "lucide-react";
 
 export const AboutMe = () => {
     const handleDownloadResume = () => {
-  fetch("/vimal.pdf")
+  fetch("/R VimalRajResume.pdf")
     .then((res) => res.blob())
     .then((blob) => {
       const url = window.URL.createObjectURL(blob);
